@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800;900&display=swap');
+
+$text-color-1: #fff;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    background: url("/images/bg-body.svg");
+    background-position: -75% -130%;
+    background-size: 75% 80%;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    padding: 0 50px;
+}
+
+.introduction{
+    display: flex;
+    gap: 10px;
+    margin-top: 35px;
+
+
+    .pic-name{
+        position: relative;
+        z-index: 1000;
+        box-shadow: 4px 4px 10px rgba(0,0,255,.4);
+        border-radius: 5px;
+        h2{
+            font-size: 42px;
+            font-weight: 500;
+            color: $text-color-1;
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            text-transform: uppercase;
+        }
+
+        img{
+            border-radius: 5px;
+            width: 400px;
+            height: 495px;
+            opacity: 1;
+        }
+    }
+
+    .about-me{
+        position: relative;
+        top: 60px;
+        left: -35px;
+        width: 700px;
+        height: 380px;
+        padding: 25px 50px;
+        box-shadow: 4px 4px 10px rgba(0,0,255,.4);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        h2{
+            font-weight: 500;
+            font-size: 35px;
+        }
+
+        p{
+            font-size: 17px;
+            line-height: 1.2;
+            letter-spacing: .2px;
+        }
+
+        .my-socials{
+            align-self: flex-end;
+            margin-top: 20px;
+
+            ion-icon{
+                font-size: 22px;
+                margin: 0 6px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.my-projects{
+    margin-top: 60px;
+
+    h2{
+        margin-bottom: 10px;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: auto;
+    gap: 40px;
+    .project{
+        box-shadow: 4px 4px 10px rgba(0,0,0,.4);
+        border-radius: 5px;
+
+        img{
+        border-radius: 5px;
+        width: 350px;
+        height: 250px;
+        cursor: pointer;
+            }
+
+        .project-info{
+            padding: 5px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .projectname-links{
+                display: flex;
+                justify-content: space-between;
+
+                .project-name{
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                .project-links{
+                    a{
+                        margin: 0 5px;
+                        font-size: 22px;
+                        color: #000;
+                        transition: all .35s ease;
+
+                        &:hover{
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+}
+
+.footer{
+    margin-top: 60px;
+    background: #0990b2;
+    color: $text-color-1;
+
+    .footer-container{
+         padding: 40px 50px;
+         display: flex;
+         justify-content: space-between;
+         gap: 40px;
+
+         .footer-info{
+            padding: 0 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            h2{
+                font-size: 40px;
+                font-weight: 500;
+            }
+
+            a{
+                color: $text-color-1;
+            }
+         
+        .my-socials{
+
+            ion-icon{
+                font-size: 22px;
+                margin: 0 6px;
+                cursor: pointer;
+                color: #000;
+            }
+
+        }
+        
+        }
+
+        
+
+    }
+}
+
+.buttons{
+    margin: 20px 0;
+    color: #e6e3e3;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 5px;
+  }
+  
+  .button{
+    // display: inline-block;
+    padding: 7px 45px;
+    font-size: 19px;
+    background-color: #077996;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1px;
+    color: #fff;
+    align-items: center;
+    transition: all .55s ease;
+  }
+  
+  .button:hover{
+    color: #000;
+  }
+
+@import 'mediaqueries';
+

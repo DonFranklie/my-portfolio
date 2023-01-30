@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  background: url("/images/bg-body.svg");
+  background-position: -75% -130%;
+  background-size: 75% 80%;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  padding: 0 50px;
+}
+
+.introduction {
+  display: flex;
+  gap: 10px;
+  margin-top: 35px;
+}
+.introduction .pic-name {
+  position: relative;
+  z-index: 1000;
+  box-shadow: 4px 4px 10px rgba(0, 0, 255, 0.4);
+  border-radius: 5px;
+}
+.introduction .pic-name h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  text-transform: uppercase;
+}
+.introduction .pic-name img {
+  border-radius: 5px;
+  width: 400px;
+  height: 495px;
+  opacity: 1;
+}
+.introduction .about-me {
+  position: relative;
+  top: 60px;
+  left: -35px;
+  width: 700px;
+  height: 380px;
+  padding: 25px 50px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.introduction .about-me h2 {
+  font-weight: 500;
+  font-size: 35px;
+}
+.introduction .about-me p {
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+.introduction .about-me .my-socials {
+  align-self: flex-end;
+  margin-top: 20px;
+}
+.introduction .about-me .my-socials ion-icon {
+  font-size: 22px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.my-projects {
+  margin-top: 60px;
+}
+.my-projects h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.my-projects .project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: auto;
+  gap: 40px;
+}
+.my-projects .project-container .project {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+.my-projects .project-container .project img {
+  border-radius: 5px;
+  width: 350px;
+  height: 250px;
+  cursor: pointer;
+}
+.my-projects .project-container .project .project-info {
+  padding: 5px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.my-projects .project-container .project .project-info .projectname-links {
+  display: flex;
+  justify-content: space-between;
+}
+.my-projects .project-container .project .project-info .projectname-links .project-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+.my-projects .project-container .project .project-info .projectname-links .project-links a {
+  margin: 0 5px;
+  font-size: 22px;
+  color: #000;
+  transition: all 0.35s ease;
+}
+.my-projects .project-container .project .project-info .projectname-links .project-links a:hover {
+  color: blue;
+}
+
+.footer {
+  margin-top: 60px;
+  background: #0990b2;
+  color: #fff;
+}
+.footer .footer-container {
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer .footer-container .footer-info {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .footer-container .footer-info h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.footer .footer-container .footer-info a {
+  color: #fff;
+}
+.footer .footer-container .footer-info .my-socials ion-icon {
+  font-size: 22px;
+  margin: 0 6px;
+  cursor: pointer;
+  color: #000;
+}
+
+.buttons {
+  margin: 20px 0;
+  color: #e6e3e3;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  gap: 5px;
+}
+
+.button {
+  padding: 7px 45px;
+  font-size: 19px;
+  background-color: #077996;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1px;
+  color: #fff;
+  align-items: center;
+  transition: all 0.55s ease;
+}
+
+.button:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 350px;
+    gap: 40px;
+  }
+  .project-container .project {
+    box-shadow: 4px 4px 10px rgba(0, 250, 190, 0.4);
+  }
+}

@@ -1,0 +1,12 @@
+// @media (max-width: 1024px){
+@media screen and (max-width: 600px){
+    .project-container{
+        grid-template-columns: 350px;
+        gap: 40px;
+
+        .project{
+        box-shadow: 4px 4px 10px rgba(0,250,190,.4);
+
+        }
+    }
+}
